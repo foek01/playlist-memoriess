@@ -1,0 +1,114 @@
+.memories {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.memories h1,
+.memories h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.memories h2 {
+    opacity: 0.7;
+}
+
+.memories .meta {
+    flex: 0 0 6rem;
+    position: relative;
+}
+
+.memories .list {
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.list.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+    font-size: 2rem;
+}
+
+.memory {
+    position: relative;
+    display: flex;
+    height: 15rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.new {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.new:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.new > svg {
+    font-size: 2rem;
+}
+
+.new > div {
+    font-size: 1rem;
+}
+
+.memory > input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    padding: 1rem;
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+.memory > img {
+    flex: 0 0 20rem;
+    width: 20rem;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    flex: 1 1 auto;
+    resize: none;
+    border: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: "Product Sans", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+}
